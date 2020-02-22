@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/digicore/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/digicore/static/js/main.0c19d48f.chunk.js",
+    "main.js.map": "/digicore/static/js/main.0c19d48f.chunk.js.map",
+    "runtime-main.js": "/digicore/static/js/runtime-main.22a7ad0a.js",
+    "runtime-main.js.map": "/digicore/static/js/runtime-main.22a7ad0a.js.map",
+    "static/js/2.e9265ccf.chunk.js": "/digicore/static/js/2.e9265ccf.chunk.js",
+    "static/js/2.e9265ccf.chunk.js.map": "/digicore/static/js/2.e9265ccf.chunk.js.map",
+    "index.html": "/digicore/index.html",
+    "precache-manifest.ebbcd1e11ee13dcaf6508a2ab37d040c.js": "/digicore/precache-manifest.ebbcd1e11ee13dcaf6508a2ab37d040c.js",
+    "service-worker.js": "/digicore/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/digicore/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.e9265ccf.chunk.js.LICENSE.txt": "/digicore/static/js/2.e9265ccf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22a7ad0a.js",
+    "static/js/2.e9265ccf.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.0c19d48f.chunk.js"
+  ]
+}
