@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ed8675a7acfc8c6672d30fde20b564a",
+    "revision": "41bfe1cc3ea2712b84a1f1cf199622ed",
     "url": "/digicore/index.html"
   },
   {
-    "revision": "5c35ddc966ca15b49c84",
+    "revision": "273abdd24e152810a6ee",
     "url": "/digicore/static/css/main.ddd20601.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/digicore/static/js/2.88f14fed.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5c35ddc966ca15b49c84",
-    "url": "/digicore/static/js/main.e91c9041.chunk.js"
+    "revision": "273abdd24e152810a6ee",
+    "url": "/digicore/static/js/main.3e25edd3.chunk.js"
   },
   {
     "revision": "72b799c8143209401bd8",
