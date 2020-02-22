@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/digicore/static/css/main.ddd20601.chunk.css",
-    "main.js": "/digicore/static/js/main.9eaedbfe.chunk.js",
-    "main.js.map": "/digicore/static/js/main.9eaedbfe.chunk.js.map",
+    "main.js": "/digicore/static/js/main.e91c9041.chunk.js",
+    "main.js.map": "/digicore/static/js/main.e91c9041.chunk.js.map",
     "runtime-main.js": "/digicore/static/js/runtime-main.22a7ad0a.js",
     "runtime-main.js.map": "/digicore/static/js/runtime-main.22a7ad0a.js.map",
-    "static/js/2.e9265ccf.chunk.js": "/digicore/static/js/2.e9265ccf.chunk.js",
-    "static/js/2.e9265ccf.chunk.js.map": "/digicore/static/js/2.e9265ccf.chunk.js.map",
+    "static/js/2.88f14fed.chunk.js": "/digicore/static/js/2.88f14fed.chunk.js",
+    "static/js/2.88f14fed.chunk.js.map": "/digicore/static/js/2.88f14fed.chunk.js.map",
     "index.html": "/digicore/index.html",
-    "precache-manifest.bce1767af3ed9175de47c8075e3a31d7.js": "/digicore/precache-manifest.bce1767af3ed9175de47c8075e3a31d7.js",
+    "precache-manifest.3138b81ae01e8219249d93db3cd5ca46.js": "/digicore/precache-manifest.3138b81ae01e8219249d93db3cd5ca46.js",
     "service-worker.js": "/digicore/service-worker.js",
     "static/css/main.ddd20601.chunk.css.map": "/digicore/static/css/main.ddd20601.chunk.css.map",
-    "static/js/2.e9265ccf.chunk.js.LICENSE.txt": "/digicore/static/js/2.e9265ccf.chunk.js.LICENSE.txt",
+    "static/js/2.88f14fed.chunk.js.LICENSE.txt": "/digicore/static/js/2.88f14fed.chunk.js.LICENSE.txt",
     "static/media/index.css": "/digicore/static/media/employeecard.1d2518d3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.22a7ad0a.js",
-    "static/js/2.e9265ccf.chunk.js",
+    "static/js/2.88f14fed.chunk.js",
     "static/css/main.ddd20601.chunk.css",
-    "static/js/main.9eaedbfe.chunk.js"
+    "static/js/main.e91c9041.chunk.js"
   ]
 }
