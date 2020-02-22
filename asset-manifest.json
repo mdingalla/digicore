@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/digicore/static/css/main.d1b05096.chunk.css",
-    "main.js": "/digicore/static/js/main.147927fc.chunk.js",
-    "main.js.map": "/digicore/static/js/main.147927fc.chunk.js.map",
+    "main.css": "/digicore/static/css/main.ddd20601.chunk.css",
+    "main.js": "/digicore/static/js/main.9eaedbfe.chunk.js",
+    "main.js.map": "/digicore/static/js/main.9eaedbfe.chunk.js.map",
     "runtime-main.js": "/digicore/static/js/runtime-main.22a7ad0a.js",
     "runtime-main.js.map": "/digicore/static/js/runtime-main.22a7ad0a.js.map",
-    "static/js/2.b6fabe4d.chunk.js": "/digicore/static/js/2.b6fabe4d.chunk.js",
-    "static/js/2.b6fabe4d.chunk.js.map": "/digicore/static/js/2.b6fabe4d.chunk.js.map",
+    "static/js/2.e9265ccf.chunk.js": "/digicore/static/js/2.e9265ccf.chunk.js",
+    "static/js/2.e9265ccf.chunk.js.map": "/digicore/static/js/2.e9265ccf.chunk.js.map",
     "index.html": "/digicore/index.html",
-    "precache-manifest.97add25aca95064026998b67c9f02cc1.js": "/digicore/precache-manifest.97add25aca95064026998b67c9f02cc1.js",
+    "precache-manifest.bce1767af3ed9175de47c8075e3a31d7.js": "/digicore/precache-manifest.bce1767af3ed9175de47c8075e3a31d7.js",
     "service-worker.js": "/digicore/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/digicore/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.b6fabe4d.chunk.js.LICENSE.txt": "/digicore/static/js/2.b6fabe4d.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/digicore/static/media/logo.5d5d9eef.svg"
+    "static/css/main.ddd20601.chunk.css.map": "/digicore/static/css/main.ddd20601.chunk.css.map",
+    "static/js/2.e9265ccf.chunk.js.LICENSE.txt": "/digicore/static/js/2.e9265ccf.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/digicore/static/media/employeecard.1d2518d3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.22a7ad0a.js",
-    "static/js/2.b6fabe4d.chunk.js",
-    "static/css/main.d1b05096.chunk.css",
-    "static/js/main.147927fc.chunk.js"
+    "static/js/2.e9265ccf.chunk.js",
+    "static/css/main.ddd20601.chunk.css",
+    "static/js/main.9eaedbfe.chunk.js"
   ]
 }
