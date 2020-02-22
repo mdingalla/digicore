@@ -27,19 +27,61 @@ class MainApp extends React.Component<any,IState>{
     handleBackgroundChange(e:any) {
         const fileReader = new FileReader();
         const file = e.target.files[0];
+        let image = new Image();
+        image.onload = ()=>{
+            var canvas = document.createElement('canvas'),
+            max_size = 165,// TODO : pull max size from a site config
+            width = image.width,
+            height = image.height;
+
+                if (width > height) {
+                    if (width > max_size) {
+                        height *= max_size / width;
+                        width = max_size;
+                    }
+                } else {
+                    if (height > max_size) {
+                        width *= max_size / height;
+                        height = max_size;
+                    }
+                }
+            
+                if(canvas)
+                {
+                    canvas.width = max_size;
+                    canvas.height = max_size;
+                 
+                   var ctx =  canvas.getContext('2d');
+                  if(ctx)
+                  {
+                    ctx.drawImage(image, 0, 0, max_size, max_size);
+                     var dataUrl = canvas.toDataURL('image/jpeg');
+                     this.setState({
+                        backgroundImage: dataUrl
+                      });
+
+                  }
+                   
+                    // var resizedImage = dataURLToBlob(dataUrl);
+                   
+                }
+          }
+       
 
         fileReader.onload = () => {
             // this.background.style.backgroundImage = `url(${fileReader.result})`;
             // console.log(fileReader.result)
-            // var img = new Image();
-            // img.src = fileReader.result;
-            // img.setAttribute('style', 'width:165px;');
-            // img.setAttribute('style', 'height:165px;');
-            this.setState({
-                backgroundImage: fileReader.result,
-              });
+              if(fileReader.result)
+              {
+                image.src = fileReader.result as string
+              }
+
+
+          
           };
           fileReader.readAsDataURL(file);
+         
+         
 
         
     }
@@ -119,7 +161,8 @@ class MainApp extends React.Component<any,IState>{
                 <div 
                 style={
                     {
-                        backgroundImage: `url(${this.state.backgroundImage})`
+                        backgroundImage: `url(${this.state.backgroundImage})`,
+                        backgroundRepeat:"no-repeat",
                     }
                 }
                 className="employeePhoto"></div>
@@ -193,6 +236,9 @@ class MainApp extends React.Component<any,IState>{
                     onClick={this.printPDF.bind(this)}
                     type="button">Print</button>
                 </div>
+
+
+                <img id="myImage" />
             </div>
 
         </div>
