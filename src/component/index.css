@@ -24,8 +24,8 @@ td {
     position: relative;
     float: left;
     border-radius: 50%;
-    width: 164px;
-    height: 164px;
+    width: 170px;
+    height: 170px;
     border: 3px solid #012357;
     top:122px;
     left:100px;
@@ -49,7 +49,7 @@ td {
     position: relative;
     color: white;
     float: left;
-    top:363px;
+    top:350px;
     left:0;
 }
 
@@ -72,6 +72,10 @@ td {
     padding: 5px;
     overflow: hidden;
     height: 40px;
+}
+
+.employeeContact {
+    height: 80px;
 }
 
 .employeeDataRow:last-child{

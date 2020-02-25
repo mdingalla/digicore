@@ -9,6 +9,11 @@ interface IState  {
     name:string;
     position:string
     backgroundImage:any;
+    sss:string;
+    tin:string;
+    contact:string;
+    telno:string;
+    address:string;
 }
 
 
@@ -20,6 +25,11 @@ class MainApp extends React.Component<any,IState>{
         this.state = {
             name:'',
             position:'',
+            address:'',
+            contact:'',
+            sss:'',
+            telno:'',
+            tin:'',
             backgroundImage:null
         }
     }
@@ -153,94 +163,150 @@ class MainApp extends React.Component<any,IState>{
 
        
 
-        return <div>
-
-
-        <div id="AllCard">
-            <div id="frontCard" className="employeeCard employeeFront">
-                <div 
-                style={
-                    {
-                        backgroundImage: `url(${this.state.backgroundImage})`,
-                        backgroundRepeat:"no-repeat",
-                    }
-                }
-                className="employeePhoto"></div>
-                <div className="employeeName">
-                        <label>{this.state.name}</label>
+        return <div className="container-fluid">
+             <div className="row">
+                <div className="col-sm">
+                    <div id="frontCard" className="employeeCard employeeFront">
+                        <div 
+                        style={
+                            {
+                                backgroundImage: `url(${this.state.backgroundImage})`,
+                                backgroundRepeat:"no-repeat",
+                            }
+                        }
+                        className="employeePhoto"></div>
+                        <div className="employeeName">
+                                <label>{this.state.name}</label>
+                            </div>
+                            <div className="employeePosition">
+                                <label>{this.state.position}</label>
+                            </div>
                     </div>
-                    <div className="employeePosition">
-                        <label>{this.state.position}</label>
-                    </div>
-            </div>
-
-            <div id="backCard"  className="employeeCard employeeBack">
-                <div className="employeeData">
-                    <div className="employeeDataRow">
-                        <label>SSS No</label>
-                    </div>
-
-                    <div className="employeeDataRow">
-                        <label>TIN No</label>
-                    </div>
-
-                    <div className="employeeDataRow">
-                        <label>IN CASE OF EMERGENCY, PLEASE NOTIFY</label>
-                    </div>
-                    
-                    <div className="employeeDataRow">
-                        <label>TEL No.</label>
-                    </div>
-
-                    <div className="employeeDataRow">
-                        <label>Address.</label>
-                    </div>
-
                 </div>
+                
+                <div className="col-sm">
+                    <div id="backCard"  className="employeeCard employeeBack">
+                        <div className="employeeData">
+                            <div className="employeeDataRow">
+                                <label>SSS No :</label>
+                                <span>{this.state.sss}</span>
+                            </div>
+
+                            <div className="employeeDataRow">
+                                <label>TIN No :</label>
+                                <span>{this.state.tin}</span>
+                            </div>
+
+                            <div className="employeeDataRow employeeContact">
+                                <label>IN CASE OF EMERGENCY, PLEASE NOTIFY: </label>
+                                <span>{this.state.contact}</span>
+                            </div>
+                            
+                            <div className="employeeDataRow">
+                                <label>TEL No :</label>
+                                <span>{this.state.telno}</span>
+                            </div>
+
+                            <div className="employeeDataRow overflow-hidden">
+                                <label>Address :</label>
+                                <span>{this.state.address}</span>
+                            </div>
+
+                        </div>
 
 
-                <div className="back-footer">
-                    <p>This ID Card is the property of DigiCORETech Inc. and must be surrendered upon demand.</p>
+                        <div className="back-footer">
+                            <p>This ID Card is the property of DigiCORETech Inc. and must be surrendered upon demand.</p>
+                        </div>
+
+                    </div>
                 </div>
+                
+                <div className="col-sm">
+                    <form>
+                    <div className="employeeCard">
 
-            </div>
+                    <div className="form-group">
+                        <label className="">
+                            Name:
+                        </label>
+                        <input className="form-control" type="text" onChange={e=> this.setState({
+                            name:e.currentTarget.value
+                        })}/>
+                    </div>
 
-        </div>
-
-            <div className="employeeCard">
-
-                <div>
+                    <div className="form-group">
                     <label className="">
-                        Name:
-                    </label>
-                    <input type="text" onChange={e=> this.setState({
-                        name:e.currentTarget.value
-                    })}/>
+                            Position:
+                        </label>
+                        <input type="text" className="form-control"  onChange={e=> this.setState({
+                            position:e.currentTarget.value
+                        })}/>
+                    </div>
+
+                    <div className="form-group">
+                    <label className="">
+                            SSS:
+                        </label>
+                        <input type="text" className="form-control"  onChange={e=> this.setState({
+                            sss:e.currentTarget.value
+                        })}/>
+                    </div>
+
+                    <div className="form-group">
+                    <label className="">
+                            TIN:
+                        </label>
+                        <input type="text" className="form-control"  onChange={e=> this.setState({
+                            tin:e.currentTarget.value
+                        })}/>
+                    </div>
+
+                    <div className="form-group">
+                    <label className="">
+                            Contact:
+                        </label>
+                        <input type="text" className="form-control"  onChange={e=> this.setState({
+                            contact:e.currentTarget.value
+                        })}/>
+                    </div>
+
+                    <div className="form-group">
+                    <label className="">
+                            Tel No:
+                        </label>
+                        <input type="text" className="form-control"  onChange={e=> this.setState({
+                            telno:e.currentTarget.value
+                        })}/>
+                    </div>
+
+                    <div className="form-group">
+                    <label className="">
+                            Address:
+                        </label>
+                        <textarea className="form-control"  onChange={e=> this.setState({
+                            address:e.currentTarget.value
+                        })}/>
+                      
+                    </div>
+
+                    <div className="form-group">
+                        <input onChange={this.handleBackgroundChange.bind(this)} type="file" accept="image/*" />
+                    </div>
+
+                    <div className="form-group">
+                        <button 
+                        onClick={this.printPDF.bind(this)}
+                        type="button">Print</button>
+                    </div>
+
+
+                        {/* <img id="myImage" /> */}
+                    </div>
+                    </form>
                 </div>
 
-                <div>
-                <label className="">
-                        Position:
-                    </label>
-                    <input type="text" onChange={e=> this.setState({
-                        position:e.currentTarget.value
-                    })}/>
-                </div>
-
-                <div>
-                    <input onChange={this.handleBackgroundChange.bind(this)} type="file" accept="image/*" />
-                </div>
-
-                <div>
-                    <button 
-                    onClick={this.printPDF.bind(this)}
-                    type="button">Print</button>
-                </div>
-
-
-                <img id="myImage" />
             </div>
-
         </div>
     }
 }
